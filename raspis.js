@@ -10,6 +10,10 @@
 
 (function() {
     'use strict';
+
+var listKurs = document.getElementById("kyrs");
+listKurs.value = "2";
+
 let filters = document.querySelector('#filters');
 
 filters.click();
@@ -25,9 +29,6 @@ form.appendChild(button);
 button.onclick = function() {
     var list = document.getElementById("caf");
     list.value = "435";
-
-    var listKurs = document.getElementById("kyrs");
-    listKurs.value = "2";
 
     var listWeek = document.getElementById("srok");
     listWeek.selectedIndex = "1";
